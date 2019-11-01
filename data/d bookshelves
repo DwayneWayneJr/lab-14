@@ -1,0 +1,13 @@
+                                       Table "public.books"
+    Column    |          Type          | Collation | Nullable |              Default              
+--------------+------------------------+-----------+----------+-----------------------------------
+ id           | integer                |           | not null | nextval('books_id_seq'::regclass)
+ title        | character varying(255) |           |          | 
+ author       | character varying(255) |           |          | 
+ isbn         | character varying(255) |           |          | 
+ image_url    | character varying(255) |           |          | 
+ description  | text                   |           |          | 
+ bookshelf_id | integer                |           |          | 
+Indexes:
+    "books_pkey" PRIMARY KEY, btree (id)
+
